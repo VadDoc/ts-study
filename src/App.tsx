@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Accordion from "./components/accordion/Accordion";
+import UncotroledAccordion from "./components/UncotroledAccordion/UncotroledAccordion";
+import {Rating, ValueType} from "./components/Rating/Raiting";
+import {UncontroledRating} from "./components/UncontroledRating/UncontroledRaiting"
+import {OnOff} from "./components/OnOff/OnOff";
 
 function App() {
+  const [ratingValue, setRatingValue] = useState <ValueType>(0);
+  const [collapsed, setCollapsed] = useState <boolean>(false)
+  const [switchOn, setSwitchOn] = useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PageTitle title={'This is App component'}/>
+      <Rating
+        value={ratingValue}
+        onClick={setRatingValue}
+      />
+      <UncontroledRating/>
+      <Accordion
+        title={'Accordion controled'}
+        collapsed={collapsed}
+        onClick={() => setCollapsed(!collapsed)}
+      />
+      <UncotroledAccordion title={'Accordion uncontroled'}/>
+      <OnOff
+        onClick={setSwitchOn}
+        on={switchOn}
+      />
     </div>
   );
 }
+
+type PageTitlePropsType = {
+  title: string
+}
+
+function PageTitle(props: PageTitlePropsType) {
+  return (
+    <h2>{props.title}</h2>
+  );
+}
+
 
 export default App;
