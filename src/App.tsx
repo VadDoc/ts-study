@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import './App.css';
 import Accordion from "./components/accordion/Accordion";
 import UncotroledAccordion from "./components/UncotroledAccordion/UncotroledAccordion";
-import {Rating, ValueType} from "./components/Rating/Raiting";
+import {Rating, ValueType} from "./components/Rating/Rating";
 import {UncontroledRating} from "./components/UncontroledRating/UncontroledRaiting"
 import {OnOff} from "./components/OnOff/OnOff";
+import {CheckboxControled, InputControled, SelectControled} from "./components/Inputs/Inputs";
 
 function App() {
   const [ratingValue, setRatingValue] = useState <ValueType>(0);
@@ -29,6 +30,9 @@ function App() {
         onClick={setSwitchOn}
         on={switchOn}
       />
+      <InputControled/>
+      <CheckboxControled/>
+      <SelectControled/>
     </div>
   );
 }

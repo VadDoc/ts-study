@@ -5,7 +5,7 @@ export const UncontroledRating = () => {
 
   const [value, setValue] = useState(0)
 
-  return ( // делаем не как в Raiting.tsx
+  return ( // делаем не как в Rating.tsx
     <div>
       <UncontroledStar selected={value > 0} onClick={() => setValue(1)}/>
       <UncontroledStar selected={value > 1} onClick={() => setValue(2)}/>
