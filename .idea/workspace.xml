@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85b2908e-c2fe-451b-8b70-0c325ee0f76f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Inputs/Inputs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/Raiting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontroledRating/UncontroledRaiting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontroledRating/UncontroledRaiting.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +75,7 @@
       <workItem from="1631455765738" duration="3456000" />
       <workItem from="1631460904965" duration="18000" />
       <workItem from="1631461646799" duration="638000" />
+      <workItem from="1631532715305" duration="2241000" />
     </task>
     <servers />
   </component>
